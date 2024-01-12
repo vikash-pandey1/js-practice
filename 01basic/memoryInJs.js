@@ -1,4 +1,4 @@
-// Stack (Primitive) -> stack gives us copy of the items
+// Stack (Primitive datatype) -> stack gives us copy of the items
 let myYoutubename = 'hiteshchaudhary'
 let anothername = myYoutubename;
 
@@ -6,7 +6,7 @@ anothername = 'ramshyam'
 console.log(myYoutubename);
 console.log(anothername);
 
-// Heap (Non-Primitive) -> heap gives us reference of the items
+// Heap (Non-Primitive datatype) -> heap gives us reference of the items
 
 let userOne = {
     email:'ram@gmail.com',

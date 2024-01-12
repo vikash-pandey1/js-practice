@@ -29,7 +29,8 @@ console.log(bigNumber);
 
 
 // array
-const heros = ['shaktiman','naagraj','doga']
+const heros = ['shaktiman','naagraj','doga'];
+
 // object
 let data = {
     name:'viksh',
