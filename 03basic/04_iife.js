@@ -9,6 +9,6 @@
     console.log('db connected');
 })()
 // some times problem is created by global variable so 
-//to get rid from global scopre we use 
+//to get rid from global scope we use 
 // to remove the global scope polution(variable) we use iife
 
