@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>js</li>
+    </ul>
+</body>
+<script>
+    // add element function
+    function addLanguage(name) {
+        const li = document.createElement('li');
+        li.innerHTML = `${name}`;
+        document.querySelector('.language')
+            .appendChild(li);
+    }
+    addLanguage('python')
+    addLanguage('java')
+    addLanguage('typescript')
+
+    // optimize function to add element
+    function addLang(name) {
+        const li = document.createElement('li');
+        // li.appendChild(li.innerHTML = name); same as below
+        li.appendChild(document.createTextNode(name));
+        document.querySelector('.language').appendChild(li);
+    }
+    addLang('golang')
+
+    // edit element(update)
+
+    const second = document.querySelector('li:nth-child(2)')
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode("cpp"))
+    second.replaceWith(li)
+
+    //edit
+
+    const sec = document.querySelector('li:first-child')
+    sec.outerHTML = '<li>c</li>'
+
+    // remove 
+    const last = document.querySelector('li:last-child')
+    last.remove();
+</script>
+
+</html>
