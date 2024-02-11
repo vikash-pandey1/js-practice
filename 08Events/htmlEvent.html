@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+
+<body style="background-color: #414141;">
+    <h2>Amazing image</h2>
+    <ul id="top">
+        <li><a href="#" id="first">image</a></li>
+        <li><a href="#" id="second">image2</a></li>
+    </ul>
+</body>
+<script> // study topic
+    // type,timestamp,defaultPrevented
+    // target,toElement,srcElement,currentTarget
+    //clickX,clientY,screenX,screenT
+    //altkey,ctrlkey,shiftkey,keycode
+    // events run in js sequentially
+    // document.getElementById('owl').onclick = function () {
+    //     alert("owl clicked!")
+    // }
+
+    // document.getElementById('owl').addEventListener('click',()=>{
+    //     alert("images1  clicked!")
+    // },false);
+    // document.getElementById('idd').addEventListener('click',()=>{
+    //     alert("images2 clicked!")
+    // })
+    // event propagation true,false
+    // here false means bubble buttom to top
+    // here true means top to bottom
+    // document.getElementById('top').addEventListener('click', function (e) {
+    //     console.log("click on top");
+    //     e.stopPropagation
+    // }, false)
+    // document.getElementById('owl').addEventListener('click', function (e) {
+    //     console.log('click inner ');
+    //     e.stopPropagation
+    // }, false)
+
+    document.querySelector('#top').addEventListener('click', function (e) {
+        console.log(e.target.parentNode);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+        removeIt.remove()
+        }
+        
+        // removeIt.parentNode.removeChild(removeIt)
+    }, false)
+
+
+</script>
+
+</html>
