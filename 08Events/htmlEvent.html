@@ -14,15 +14,15 @@
         <li><a href="#" id="second">image2</a></li>
     </ul>
 </body>
-<script> 
+<script>
 
-// study topic
-    // type,timestamp,defaultPrevented
+    // study topic
+    // type,timestamp,preventDefault
     // target,toElement,srcElement,currentTarget
     //clickX,clientY,screenX,screenT
     //altkey,ctrlkey,shiftkey,keycode
     // events run in js sequentially
-    
+
     // document.getElementById('owl').onclick = function () {
     //     alert("owl clicked!")
     // }
@@ -34,11 +34,11 @@
     //     alert("images2 clicked!")
     // })
     // event propagation true,false
-    // here false means bubble buttom to top
-    // here true means top to bottom
+    // ++++++++++here false means bubble buttom to top
+    // +++++++++++here true means capturing top to bottom
     // document.getElementById('top').addEventListener('click', function (e) {
     //     console.log("click on top");
-    //     e.stopPropagation
+    //     e.stopPropagation// ++++++this meand event will not bubbled up
     // }, false)
     // document.getElementById('owl').addEventListener('click', function (e) {
     //     console.log('click inner ');
@@ -46,12 +46,13 @@
     // }, false)
 
     document.querySelector('#top').addEventListener('click', function (e) {
+        console.log(e);
         console.log(e.target.parentNode);
-        if(e.target.tagName === 'IMG'){
-            let removeIt = e.target.parentNode
-        removeIt.remove()
+        if (e.target.tagName === 'IMG') {
+            
         }
-        
+        let removeIt = e.target.parentNode
+            removeIt.remove()
         // removeIt.parentNode.removeChild(removeIt)
     }, false)
 
