@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>async project</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout(() => {
+        console.log("vikash");
+    }, 2000)
+    const sayVikash = () => {
+        console.log('vikash pandey');
+    }
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "best js series";
+    }
+    // setInterval(sayVikash, 2000)
+
+    const ref = setTimeout(changeText, 2000)
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(ref);
+        console.log("stepped");
+    })
+</script>
+
+</html>
