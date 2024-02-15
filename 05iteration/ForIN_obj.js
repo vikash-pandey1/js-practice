@@ -23,4 +23,3 @@ map.set('name3','vikash pandey')
 for(const key of map){
     console.log(key);
 }
-
