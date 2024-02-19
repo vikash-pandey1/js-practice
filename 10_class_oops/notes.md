@@ -1,7 +1,5 @@
 # javascript ans classes
-
 ## oops
-
 #Object
 -collection of properties and method
 -toLowerCase
@@ -17,7 +15,6 @@ Object literal
 Instance(new,this)
 
 ## 5 piler of oop
-
 inheritance
 abstraction
 polymorphism

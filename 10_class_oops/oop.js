@@ -29,3 +29,7 @@ const userOne = new User('vik','vik@email.com',123)
 const userTwo = new User('vikash','vikash@email.com',24444444444)
 console.log(userOne);
 console.log(userTwo);
+
+// when we use new keyword a new object created
+// then constructor function call
+// 
