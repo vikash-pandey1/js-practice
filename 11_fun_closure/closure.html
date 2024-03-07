@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure </title>
+</head>
+
+<body>
+    <script>
+        // lexical scope inner fun have scope of outer fun
+        function init() {
+            let name = 'mozilla';
+            function displayName() {
+                console.log(name);
+            }
+            displayName();
+        }
+        init();
+
+        function outer() {
+            let username = 'hitesh';
+            function inner() {
+                console.log("inner:", username);
+            }
+            inner();
+        }
+        outer();
+        console.log("too outer", username);
+    </script>
+</body>
+
+</html>
