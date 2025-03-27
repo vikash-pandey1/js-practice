@@ -1,10 +1,10 @@
-// const coding = ['js','java','py','cpp']
+const coding = ['js','java','py','cpp']
 
-// const values = coding.forEach((val)=>{  // for each did't return any value
-//     // console.log(val);
-//     return val
-// })
-// console.log(values);
+const values = coding.forEach((val)=>{  // for each did't return any value
+    // console.log(val);
+    return val
+})
+console.log(values);
 
 // const no = [1,2,3,4,5,6,7,8,9,10]
 // const re = no.filter((num)=>{
@@ -56,23 +56,23 @@ const num = [1,2,3,4]
 // const total = num.reduce((acc,curr)=> acc+curr ,5)
 // console.log(total);
 
-const shoppingCard = [
-    {
-        itemName: 'js course',
-        price:999
-    },
-    {
-        itemName:'py courses',
-        price:399
-    },
-    {
-        itemName:'c course',
-        price:388
-    }
-]
+// const shoppingCard = [
+//     {
+//         itemName: 'js course',
+//         price:999
+//     },
+//     {
+//         itemName:'py courses',
+//         price:399
+//     },
+//     {
+//         itemName:'c course',
+//         price:388
+//     }
+// ]
 
-const total = shoppingCard.reduce((acc,item)=>acc+item.price,0)
-console.log(total);
+// const total = shoppingCard.reduce((acc,item)=>acc+item.price,0)
+// console.log(total);
 
 
 
